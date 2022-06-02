@@ -1,0 +1,27 @@
+{
+    "id": "B11BFF23",
+    "path": "D:/RProjects/tutorials/RSession1.Rmd",
+    "project_path": null,
+    "type": "r_markdown",
+    "hash": "1845305124",
+    "contents": "",
+    "dirty": false,
+    "created": 1646066259587.0,
+    "source_on_save": false,
+    "relative_order": 3,
+    "properties": {
+        "tempName": "Untitled1",
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "39,0",
+        "scrollLine": "0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1646133183,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1646133183,
+    "read_only": false,
+    "read_only_alternatives": []
+}

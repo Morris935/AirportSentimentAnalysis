@@ -1,0 +1,37 @@
+---
+title: "Airport Reviews Analysis"
+author: "Morris"
+date: "2/27/2022"
+output: word_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## load packages
+```{r}
+library(tidyr)
+library(dplyr)
+require(syuzhet)
+require(wordcloud)
+require(tidytext)
+require(reshape2)
+library(ggplot2)
+#library(ggplot)
+library(stargazer)
+#library(gtsummary)
+library(foreign)
+```
+
+# Load data and remove rows with no rating
+```{r}
+
+d <- read_csv("data/airport_reviews3.csv") %>% 
+  mutate(Unique.Identifier = 1:n()) %>% 
+  # Convert text to ASCII
+  mutate(comments = iconv(Text, from="UTF-8",to="ASCII//TRANSLIT")) %>% 
+  mutate(comments = trimws(comments)) %>% 
+  filter(!is.na(Rating)) %>% 
+  filter(!is.na(Text))
+```

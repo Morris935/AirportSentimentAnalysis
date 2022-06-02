@@ -1,0 +1,3 @@
+"0","library(foreign)"
+"0","#df <- read.dta(""data set 1.dta"")"
+"0","#head(df)"

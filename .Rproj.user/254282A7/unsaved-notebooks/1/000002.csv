@@ -1,0 +1,11 @@
+"0","# Load data and remove rows with no rating"
+"0","d <- read_csv(""data/airport_reviews3.csv"") %>% "
+"0","  mutate(Unique.Identifier = 1:n()) %>% "
+"0","  # Convert text to ASCII"
+"0","  mutate(comments = iconv(Text, from=""UTF-8"",to=""ASCII//TRANSLIT"")) %>% "
+"0","  mutate(comments = trimws(comments)) %>% "
+"0","  filter(!is.na(Rating)) %>% "
+"0","  filter(!is.na(Text))"
+"2","Error in read_csv(""data/airport_reviews3.csv"") %>% mutate(Unique.Identifier = 1:n()) %>%  : 
+  could not find function ""%>%""
+"
